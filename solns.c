@@ -61,7 +61,7 @@ int factor (int num , int a[]){
     }
     
   }
- return a[];
+ return i;
 }
   
 
