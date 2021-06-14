@@ -50,6 +50,20 @@ int mode(int a[] , int n){
    return maxvalue;
  }
 
+int factor (int num , int a[]){
+  int c;
+  for(c=2; num>1;c++){
+    while(num%c == 0){
+      int i=0;
+      a[i]=c;
+      i++;
+      num = num/c;
+    }
+    
+  }
+ return a[];
+}
+  
 
     
   
