@@ -55,14 +55,14 @@ int factor (int num , int a[]){
   int i=0;
   for(c=2; num>1;c++){
     while(num%c == 0){
-      
-      a[i]=c;
-      i++;
       num = num/c;
+      a[i]=c;
+      i++
     }
     
   }
- return i;
+ int p=i;
+ return p;
 }
   
 
