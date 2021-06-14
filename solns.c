@@ -57,7 +57,7 @@ int factor (int num , int a[]){
     while(num%c == 0){
       num = num/c;
       a[i]=c;
-      i++
+      i++;
     }
     
   }
