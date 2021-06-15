@@ -53,8 +53,8 @@ int mode(int a[] , int n){
 int factor (int num , int a[]){
   int c;
   int i=0;
-  for(c=2; num>1;c++){
-    while(num%c == 0){
+  for(c=2; c<= num;c++){
+    if(num%c == 0){
       num = num/c;
       a[i]=c;
       i++;
