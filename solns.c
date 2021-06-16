@@ -55,14 +55,17 @@ int factor (int num , int a[]){
   int i=0;
   for(c=2; c<= num;c++){
     if(num%c == 0){
-      num = num/c;
+      
       a[i]=c;
+      //printf("%d %d %d\n",i,num,a[i]);
+      num = num/c;
+      c=1;
       i++;
     }
     
   }
- int p=i;
- return p;
+ 
+ return i;
 }
   
 
