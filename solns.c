@@ -50,22 +50,26 @@ int mode(int a[] , int n){
    return maxvalue;
  }
 
-int factor (int num , int a[]){
-  int c;
-  int i=0;
-  for(c=2; c<= num;c++){
-    if(num%c == 0){
-      
-      a[i]=c;
-      //printf("%d %d %d\n",i,num,a[i]);
-      num = num/c;
-      c=1;
-      i++;
-    }
+int factors(int n, int a[]){
+  
+  int i, j=0;
+  int x=n;
+  for(i=2;i<=n;i++)
+  {
     
+    if(n%i==0)
+    {
+      
+      a[j]=i;
+     // printf("%d %d %d\n",j,n,a[j]);
+      n=n/i;
+      
+      i=1;
+      j++;
+      
+    } 
   }
- 
- return i;
+  return j;  
 }
   
 
